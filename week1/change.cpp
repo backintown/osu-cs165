@@ -11,7 +11,7 @@ using namespace std;
 
 int main() {
   int change, Q, D, N, P;
-  cout << "Please enter an amount in cents less than a dollar" << endl;
+  cout << "Please enter an amount in cents less than a dollar." << endl;
   cin >> change;
   Q = change / 25;
   change %= 25;
@@ -20,7 +20,7 @@ int main() {
   N = change / 5;
   change %= 5;
   P = change;
-  cout << "Your change will be: " << endl;
+  cout << "Your change will be:" << endl;
   cout << "Q: " << Q << endl;
   cout << "D: " << D << endl;
   cout << "N: " << N << endl;
