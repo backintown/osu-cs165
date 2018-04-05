@@ -1,3 +1,11 @@
+/*********************************
+ ** Author: Alex Cheng
+ ** Date: 4/5/2018
+ ** Description:
+ ** This program will ask the user for the amount of integers they
+ ** wish to enter and then display the minimum and maximum of those
+ ** integers.
+ **********************************/
 #include <iostream>
 using std::cin;
 using std::cout;
