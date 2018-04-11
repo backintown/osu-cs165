@@ -21,19 +21,19 @@ using std::string;
 int main() {
   string fileName;
   ifstream inputFile;
-  cout << "Please enter the filename." << endl;
+  cout << "Please enter your filename." << endl;
   cin >> fileName;
-  int value, total;
+  int value = 0, total = 0;
   inputFile.open(fileName);
   if (inputFile) {
     while (inputFile >> value) {
-      cout << value << endl;
       total += value;
     }
     inputFile.close();
     ofstream outputFile("sum.txt");
     outputFile << total;
     outputFile.close();
+    cout << "result written to sum.txt" << endl;
   } else {
     cout << "could not access file" << endl;
   }

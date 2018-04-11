@@ -15,7 +15,7 @@ using std::endl;
 
 int main() {
   bool done = false;
-  cout << "Enter a number for the player to guess." << endl;
+  cout << "Enter the number for the player to guess." << endl;
   int num, guess, tries = 0;
   cin >> num;
   cout << "Enter your guess." << endl;
