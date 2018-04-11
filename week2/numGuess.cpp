@@ -2,8 +2,8 @@
  ** Author: Alex Cheng
  ** Date: 4/5/2018
  ** Description:
- ** This program will prompt the user for
- ** an integer for some other player to guess.
+ ** This program will prompt the user for an integer
+ ** for some other player to guess.
  ** It will tell the player if the guess is too high or too low.
  ** It will display the number of guesses when the player wins.
  **************************************/

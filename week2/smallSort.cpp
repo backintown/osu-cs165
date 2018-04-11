@@ -1,9 +1,19 @@
+/*************************************
+ ** Date: 4/4/2018
+ ** Author: Alex Cheng
+ ** Description:
+ ** This function takes in three parameters and sorts them in ascending order.
+ ** The function places the lowest value in first and so on.
+ **************************************/
+
+/*
 #include <iostream>
 using std::cin;
 using std::cout;
 using std::endl;
 
 void smallSort(int &first, int &second, int &third);
+*/
 
 void smallSort(int &first, int &second, int &third) {
   int tmp;
@@ -40,9 +50,9 @@ void smallSort(int &first, int &second, int &third) {
   }
 }
 
-int main() {
+/* int main() {
   int a = 3, b = 2, c = 1;
   smallSort(a, b, c);
   cout << a << ", " << b << ", " << c << endl;
   return 0;
-}
+} */

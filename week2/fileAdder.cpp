@@ -4,8 +4,7 @@
  ** Description:
  ** This program will ask the user for a filename
  ** they wish to open and output the sum of the
- ** integers in the file into another file called
- ** "sum.txt".
+ ** integers in the file into another file called "sum.txt".
  *************************************/
 
 #include <fstream>
