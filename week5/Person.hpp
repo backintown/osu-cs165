@@ -20,7 +20,7 @@ private:
 public:
   Person();
   Person(string, double);
-  string getName();
+  string getName() const;
   double getAge();
 };
 

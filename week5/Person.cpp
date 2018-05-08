@@ -40,7 +40,7 @@ Person::Person(string nameIn, double ageIn) {
 getName() - returns a Person's name.
 ************************/
 
-string Person::getName() { return name; }
+string Person::getName() const { return name; }
 
 /************************
 getAge() - returns a Person's age.

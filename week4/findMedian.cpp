@@ -9,6 +9,13 @@
 #include <algorithm>
 //#include <iostream>
 
+/****************************
+ *        findMedian:
+ ** This function takes in an array of integers
+ ** and the size of the array and returns a double
+ ** that's the median of the array.
+ ****************************/
+
 double findMedian(int array[], int size) {
   std::sort(array, array + size);
   double median;
