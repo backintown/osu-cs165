@@ -17,7 +17,9 @@ bool isDecreasing(int arr[], int size) {
   // base case
   if (size == 2)
     return arr[size - 1] < arr[size - 2];
-  // recursive base
+  // recursive case
+  // if decreasing, call function again
+  // else return false and quit out of recursion
   if (arr[size - 1] < arr[size - 2])
     return isDecreasing(arr, size - 1);
   return false;
@@ -25,5 +27,8 @@ bool isDecreasing(int arr[], int size) {
 
 // int main() {
 //   int array[] = {0, -2, -3, -4, 0};
+
+//   int array2[] = {-2, -2, -3, -4, -5};
 //   std::cout << isDecreasing(array, 5) << std::endl;
+//   std::cout << isDecreasing(array2, 5) << std::endl;
 // }
