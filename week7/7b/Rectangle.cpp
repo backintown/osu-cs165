@@ -1,6 +1,17 @@
+/**********************************
+ ** Author: Alex Cheng
+ ** Date: 5/16/2018
+ ** Description:
+    This is the implementation file for the Rectangle class. The constructors
+    will set length and width to 1 if no arguments, else sets them to specified
+    values. The setLength and setWidth sets length and width to the respective
+    input values. The area and perimeter functions from Shape are overridden to
+    return area and perimeter for rectangles.
+***********************************/
+
 #include "Rectangle.hpp"
 #include "Shape.hpp"
-#include <iostream>
+// #include <iostream>
 Rectangle::Rectangle() {
   setLength(1);
   setWidth(1);

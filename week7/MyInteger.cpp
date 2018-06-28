@@ -1,5 +1,17 @@
+/**********************************
+ ** Author: Alex Cheng
+ ** Date: 5/16/2018
+ ** Description:
+    This is the implementation file for the MyInteger class. The default
+    constructor sets pInt to 0. The regular constructor sets pInt to the input.
+    The copy constructor takes in a MyInteger instance and creates a new
+    MyInteger instance and sets pInt to the input's pInt. The =operator first
+    frees memory from the left obj's pInt and then allocates new memory for the
+    new pInt equal to the right obj's pInt.
+***********************************/
+
 #include "MyInteger.hpp"
-#include <iostream>
+// #include <iostream>
 
 /***************************
  * default constructor
@@ -35,23 +47,23 @@ MyInteger &MyInteger::operator=(const MyInteger &obj) {
 int MyInteger::getMyInt() { return *pInteger; }
 void MyInteger::setMyInt(int value) { *pInteger = value; }
 
-int main() {
-  MyInteger obj1(17);
-  MyInteger obj2 = obj1;
-  std::cout << obj1.getMyInt() << std::endl;
-  std::cout << obj2.getMyInt() << std::endl;
+// int main() {
+//   MyInteger obj1(17);
+//   MyInteger obj2 = obj1;
+//   std::cout << obj1.getMyInt() << std::endl;
+//   std::cout << obj2.getMyInt() << std::endl;
 
-  obj2.setMyInt(9);
-  std::cout << obj1.getMyInt() << std::endl;
-  std::cout << obj2.getMyInt() << std::endl;
+//   obj2.setMyInt(9);
+//   std::cout << obj1.getMyInt() << std::endl;
+//   std::cout << obj2.getMyInt() << std::endl;
 
-  MyInteger obj3(42);
-  obj2 = obj3;
-  std::cout << obj2.getMyInt() << std::endl;
-  std::cout << obj3.getMyInt() << std::endl;
+//   MyInteger obj3(42);
+//   obj2 = obj3;
+//   std::cout << obj2.getMyInt() << std::endl;
+//   std::cout << obj3.getMyInt() << std::endl;
 
-  obj3.setMyInt(1);
-  std::cout << obj2.getMyInt() << std::endl;
-  std::cout << obj3.getMyInt() << std::endl;
-  return 0;
-}
+//   obj3.setMyInt(1);
+//   std::cout << obj2.getMyInt() << std::endl;
+//   std::cout << obj3.getMyInt() << std::endl;
+//   return 0;
+// }

@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+	\begin{center}
+		Alex Cheng \\
+		CS-165 \\
+		Assignment 2a Project Plan
+	\end{center}
+	\section{Test Plan}
+	\begin{tabular}{|c|c|}
+		\hline
+		User enters 4, then 1 2 3 4 & Output "min: 1 max: 4" \\ \hline
+		User enters 1, then -1 & Output "min: -1 max: -1" \\ \hline
+		User enters 3, then 1 0 1  & Output "min: 0 max: 1" \\ \hline
+		User enters 2, then 999 -1000 & Output "min: -1000 max: 999" \\ \hline
+		User enters 2, then 1 1 & Output "min: 1 max: 1" \\ \hline
+	\end{tabular}
+	\section{Design Plan}
+	\begin{verbatim}
+		declare min, max, and input variables
+		prompt user to enter a positive integer amount of integers they wish to enter
+		initialize an integers variable to the user-entered value
+		
+		for all positive integers from 0 to number of integers they wish to enter - 1 
+		    wait for user to input an integer and store it into input
+		    if it's the first integer
+		        set max and min equal to input
+		    else if the integer is greater than or equal max 
+		        set max equal to input
+		    else if the integer is less than or equal to min
+		        set min equal to input
+		        
+		print min, max
+	\end{verbatim}
+	
+\end{document}

@@ -1,0 +1,31 @@
+\documentclass[]{article}
+\usepackage{amsmath}
+%opening
+\title{Project 2a Reflection}
+\author{Alex Cheng}
+
+\begin{document}
+\maketitle
+\section{Understanding}
+The problem was fairly simple, we needed to take all the numbers the user gives us and print out the min and max of those numbers. \\ 
+
+Initially, I thought of keeping a variable for each number the user enters but I soon realized that there's no way of knowing from the start how many numbers the user wants to enter.
+
+\section{Design, Implementation, and Testing}
+My initial design was to keep a variable for each number entered. This was soon scrapped as I said above. I then decided to use a for loop to get all the user's inputs even though a while loop was also acceptable. I decided to use a for loop because I though it was more intuitive. The book was extremely helpful for setting up the general structure of the program. \\  
+
+I had initially decided that I would initialize min and max to 0, however, I ran into a problem during testing where if the user only entered negative numbers, then the max would be 0 even though the user did not enter 0 and similarly for max. \\ 
+
+I also realized that when the user only wanted to enter one number, I'd need to set both min and max equal to that number. I ran into that problem when I tested my code and saw that when uninitialized, a variable could have a crazy, unexpected value. I decided the set min and max to the first entered value in the first iteration of the loop.\\ 
+
+I thought my tests were extensively enough that they did a good job of testing my program. One test I would have added was the scenario in which the user wanted to enter no numbers. The assignment allowed us to assume that the user would enter 1 or higher so I did not include the test.
+
+\section{Improvement}
+From working on this program, I could think of a couple of things that I should keep in mind when working on future projects. 
+\begin{enumerate}
+	\item Always make sure a variable is initialized before using or there will be unexpected results.
+	\item Make sure to create a testing plan that accounts for all possible scenarios.
+	\item Expect that you might need to change your original plan for your program.
+\end{enumerate}
+
+\end{document}

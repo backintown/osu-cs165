@@ -1,0 +1,26 @@
+\documentclass[]{article}
+
+%opening
+\title{Assignment 6b comparisons \\ CS 165}
+\author{Alex Cheng}
+
+\begin{document}
+
+\maketitle
+
+\section{Comparisons}
+\begin{itemize}
+	\item Claire DeVoe:\\
+	Claire's program created a helper function for the arrayMax function. The helper function, intMax, returned the greater of two numbers. While this might make the program easier to follow, I felt that it was an unnecessary abstraction for a relatively simple function. Also, Claire's program has a mistake in that she could step out of the bounds of the array. For these reasons, I believe my program is better.
+	\\
+	\item Jordan Sturtz:\\
+	Jordan's program was very similar to mine. We both declared a variable, max, to store the max integer returned by our recursive functions. The difference is that Jordan's program started from the start of the array, i.e., the 0th index and doing pointer arithmetic to step through the array. My program started at the end of the array and goes backwards. I'm not sure if one is more efficient than the other so I can't say which program is better based on performance. I think Jordan's program is very interesting but I think it's very specific to C/C++ since it's doing pointer arithmetic. For that reason, I believe my program is better since I believe it's more language agnostic.
+	\\
+	\item  Yun Tse Wu:\\
+	Our group decided that Yun Tse's program was the best one for a couple reasons. First, it's very simple to follow, even without comments. Second, it uses a standard library, std::max, to find the maximum between two numbers that we felt is probably more efficient. One problem was that he/she had a superfluous if statement (if size == 0), that could be omitted. Also, as mentioned above, it could have used some comments. In spite of the flaws, I still believe Yun's program is fundamentally better than mine.
+\end{itemize}
+\section{What I learned}
+ From Yun's program, I learned that for simple functions, usually there's a standardized library that's probably more efficient than what you can come up with. I will look for standard functions to use in the future instead of reinventing the wheel. From Claire and Yun's program, I learned that it's sometimes helpful to have a helper function in order to make the logic clearer. From Jordan's program, I'm reminded that there's often more than one way of achieving the same results. \\
+ 
+I believe all of our programs are very similar and not one is substantially better, and while we could say one is definitively better, I think it's important to recognize other suboptimal solutions are not necessarily bad.
+\end{document}

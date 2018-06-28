@@ -1,6 +1,17 @@
+/**********************************
+ ** Author: Alex Cheng
+ ** Date: 5/16/2018
+ ** Description:
+    This is the implementation file for the Square class. The default
+    constructor calls the Rectangle class default constructor. The regular
+    constructor takes in one double and calls the Rectangle constructor with
+    both arguments set to the specified input since all sides of a square are
+    equal. The setLength and setWidth methods are overridden and uses the
+    Rectangle methods to set both length and width to the same input value.
+***********************************/
 
 #include "Square.hpp"
-#include <iostream>
+// #include <iostream>
 
 Square::Square() : Rectangle() {}
 
